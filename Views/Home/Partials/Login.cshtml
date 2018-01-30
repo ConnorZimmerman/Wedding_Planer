@@ -1,0 +1,16 @@
+@{ ViewData["Title"] = "Home Page"; } 
+@model wedding_planner.Models.LoginViewModels
+<h3>Login</h3>
+<form asp-controller="Home" asp-action="LoginUser" method="post">
+    <label asp-for="lEmail"></label>
+    <input asp-for="lEmail"  />
+    <span asp-validation-for="lEmail"></span>
+    <br>
+    <label asp-for="lPassword" ></label>
+    <input asp-for="lPassword" />
+    <span asp-validation-for="lPassword"></span>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<br>
+<p>@ViewBag.error</p>

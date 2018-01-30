@@ -1,0 +1,42 @@
+@{ ViewData["Title"] = "Home Page"; } 
+@model IEnumerable<wedding_planner.Models.weddings>
+<a href="/logout">Logout</a>
+<h1>Welcome to the Wedding Planner</h1>
+<table>
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th><span style="margin-left: 20px; margin-right:10px;">Guest</span></th>
+        <th>Action</th>
+    </tr>
+    @{
+        @foreach(var wedding in Model){
+            bool checkAction = true;
+            <tr>
+                <td><a href="wedding_display/@wedding.id">@wedding.wedders</a></td>
+                <td>@wedding.date.ToString("MMM dd yyyy")</td>
+                <td><span style="margin-left: 20px; margin-right:10px;">@wedding.guests</span></td>
+                @if(@ViewBag.userId == @wedding.created_by){
+                    <td><a href="/delete/@wedding.id">delete</a></td>
+                }
+                else{
+                    @foreach(var user in @wedding.weddings_has_users)
+                    {   
+                        @if(@ViewBag.userId == @user.users_id){
+                            checkAction = false;
+                            <td><a href="/RemoveUserFromEvent/@wedding.id">Un-RSVP</a></td>
+                        }
+                    }
+                @if(checkAction)
+                {
+                    <td><a href="/AddUserToEvent/@wedding.id">RSVP</a></td>
+                }
+                checkAction = true;
+                }
+            </tr>
+        }
+    }
+</table>
+
+<br>
+<a href="/plan_wedding"><button>New Wedding</button></a>

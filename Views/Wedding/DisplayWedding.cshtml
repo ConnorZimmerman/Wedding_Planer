@@ -1,0 +1,18 @@
+@{ ViewData["Title"] = "Home Page"; }
+@model wedding_planner.Models.weddings
+<a href="/Dashboard">Dashboard</a>
+<br>
+<a href="/logout">Logout</a>
+<h1>@ViewBag.wedders Wedding</h1>
+<h4>Date: @ViewBag.date.ToString("MMMM dd, yyyy")</h4>
+<h4>Guests:</h4>
+@{
+    @foreach(var user in @Model.weddings_has_users)
+    {
+    <p>@user.user.first_name @user.user.last_name</p>
+    }
+  }
+}
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA-ZFhabD8g8iW7pDLrlHX2S8q2KNQKK18
+  &q=@ViewBag.address" allowfullscreen>
+</iframe>

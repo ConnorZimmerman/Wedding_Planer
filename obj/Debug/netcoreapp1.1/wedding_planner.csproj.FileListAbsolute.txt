@@ -1,0 +1,10 @@
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.csproj.CoreCompileInputs.cache
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.AssemblyInfoInputs.cache
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.AssemblyInfo.cs
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.deps.json
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.json
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.runtimeconfig.dev.json
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\bin\Debug\netcoreapp1.1\wedding_planner.pdb
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.dll
+C:\Users\Connor\Desktop\DojoAssignments\netCore\Entity\wedding_planner\obj\Debug\netcoreapp1.1\wedding_planner.pdb
